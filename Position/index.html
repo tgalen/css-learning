@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="script.js"></script>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="static">
+            <h1>Static</h1>
+            <p>default position</p>
+            <p>position : static</p>
+            <div class="blueBox">
+                <div class="pinkBox"><p>position : static</p></div>
+                <p>position : static</p>
+            </div>
+            <div class="sticky">sticky</div>
+        </div>
+        <div id="relative">
+            <h1>Relative</h1>
+            <p>the element is positioned relative to its normal position</p>
+            <p>position : static</p>
+            <div class="blueBox">
+                <div class="pinkBox">
+                    <p>position : static</p>
+                </div>
+                <h5>position : relative<br />left : 100px</h5>
+                <p>notice how the blue box is positioned 100px to the right of the static positioned blue box</p>
+            </div>
+            <div class="sticky">sticky</div>
+        </div>
+        <div id="absolute">
+            <h1>Absolute</h1>
+            <p>
+                an element with absolute positioning is positioned relaitive it's first<br />
+                non static positioned element. If there are no non static ancestors then<br />
+                the element is positioned relative to the html doc. position absolute removes the element from the documnet flow.
+            </p>
+            <p>position: relative</p>
+            <div class="blueBox">
+                <div class="pinkBox">
+                    <p>position: absolute<br />top: 100px<br />right: 600px</p>
+                </div>
+                <p>position: absolute<br />left: 750px<br />bottom : 15px<br />pinkBox parent with non static positioning</p>
+            </div>
+        </div>
+        <div id="fixed">Fixed</div>
+    </body>
+</html>
