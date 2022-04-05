@@ -13,19 +13,76 @@ h2 {
   margin-left: 2%;
 }
 
-#block {
+#block-wrapper {
   height: 34vh;
   background-color: azure;
+  color: cadetblue;
 }
 
-#inline {
-  height: 33vh;
-
-  background-color: aquamarine;
+#block1 {
+  background-color: cadetblue;
+  color: azure;
+  text-align: center;
 }
 
-#inline-block {
-  height: 33vh;
+#block2 {
+  background-color: cadetblue;
+  height: 60px;
+  margin: 20px 40%;
+  width: 20%;
+  color: azure;
+  text-align: center;
+}
 
+#block3 {
+  background-color: cadetblue;
+  color: white;
+}
+
+#inline-wrapper {
+  height: 33vh;
+  color: dimgray;
+  background-color: lightgreen;
+}
+
+#inline-parent {
+  margin: auto;
+  width: 70%;
+  height: 70%;
+  background-color: dimgray;
+}
+
+#inline-1 p {
+  color: lightgreen;
+  display: inline;
+  outline: 2px solid white;
+}
+
+#inline-block-wrapper {
+  height: 33vh;
   background-color: dodgerblue;
+}
+
+#inline-block1 {
+  display: inline-block;
+  background-color: darksalmon;
+  border-radius: 2px;
+  padding: 20px 15px;
+  margin-left: 20%;
+}
+
+#inline-block2 {
+  display: inline-block;
+  background-color: darksalmon;
+  border-radius: 2px;
+  padding: 20px 15px;
+  height: 50%;
+}
+
+#inline-block3 {
+  display: inline-block;
+  background-color: darksalmon;
+  border-radius: 2px;
+  padding: 20px 15px;
+  width: 40%;
 }

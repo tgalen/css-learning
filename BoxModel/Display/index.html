@@ -9,9 +9,57 @@
   </head>
   <body>
     <div id="content-wrapper">
-      <div id="block"><h2>Block</h2></div>
-      <div id="inline"><h2>Inline</h2></div>
-      <div id="inline-block"><h2>Inline Block</h2></div>
+      <div id="block-wrapper">
+        <h2>Block</h2>
+        <div id="block1">Block</div>
+        <p>
+          Default width is 100% of it's parent element and the default height is
+          0 but the element will adjust height to display it's content.
+        </p>
+        <div id="block2">
+          Block
+          <p><br />height and width can be adjusted</p>
+        </div>
+        <div id="block3">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum,
+            fugiat. Quisquam explicabo, itaque adipisci aspernatur architecto
+            eius eum rem dignissimos laborum illo optio, aut quae neque, modi
+            esse. Odit, unde.
+          </p>
+        </div>
+      </div>
+      <div id="inline-wrapper">
+        <h2>Inline</h2>
+        <div id="inline-parent">
+          <div id="inline-1">
+            <p>
+              inline elements take up as much height and width as their
+              contents. height and width is not customizable
+            </p>
+            <p>
+              inline elements will <span style="color: yellow">not</span> start
+              a new line in the flow of the document
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              consequuntur tempora sunt doloremque qui perferendis ex animi
+              obcaecati similique quam asperiores a corporis vitae, eum esse
+              error ullam, fugit non!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="inline-block-wrapper">
+        <h2>Inline Block</h2>
+        <p>
+          The element itself is formatted as an inline element, but you can
+          apply height and width values
+        </p>
+        <div id="inline-block1">inline-block</div>
+        <div id="inline-block2">inline-block</div>
+        <div id="inline-block3">inline-block</div>
+      </div>
     </div>
   </body>
 </html>
